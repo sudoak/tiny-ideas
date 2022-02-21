@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import type { NextPage } from "next";
 import {
   Box,
@@ -95,7 +94,7 @@ const Home: NextPage = () => {
         <Container
           as={Stack}
           maxW={"6xl"}
-          py={2}
+          py={4}
           spacing={4}
           justify={"center"}
           align={"center"}
@@ -117,37 +116,23 @@ const Home: NextPage = () => {
             <Stack
               as={Box}
               textAlign={"center"}
-              spacing={{ base: 4, md: 10 }}
-              py={{ base: 10, md: 20 }}
+              spacing={{ base: 8, md: 14 }}
+              py={{ base: 20, md: 36 }}
             >
               <Heading
-                fontWeight={400}
-                fontSize={{ base: "xl", sm: "2xl", md: "4xl" }}
+                fontWeight={600}
+                fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
                 lineHeight={"110%"}
               >
-                Hi Folks, I am Akram. <br />
+                Make money from <br />
                 <Text as={"span"} color={"green.400"}>
-                  I am a full stack developer who's started a organic initiave
-                  among other things.
+                  your audience
                 </Text>
               </Heading>
-              <Text color={"gray.600"} textAlign={"left"}>
-                I am a person who always come up with new idea's now and then.
-                Some times i record it and sometimes i forget. May be you also
-                have such affair. We all have great idea's, but what next.
-                <br />
-                The Goal of this website is to challenge me personally and bring
-                those ideas to life.
-                I will be also writing about my journey on my{" "}
-                <a
-                  className="text-green-500 hover:text-green-600 hover:underline hover:uppercase"
-                  href="/blog"
-                >
-                  tiny blog.
-                </a>
-                <br/>
-                <br />
-                <div className="subpixel-antialiased">Connect with me via mail: sudoakk@gmail.com</div>
+              <Text color={"gray.500"}>
+                Monetize your content by charging your most loyal readers and
+                reward them loyalty points. Give back to your loyal readers by
+                granting them access to your pre-releases and sneak-peaks.
               </Text>
               <Stack
                 direction={"column"}
@@ -165,8 +150,31 @@ const Home: NextPage = () => {
                     bg: "green.500",
                   }}
                 >
-                  <a href="/blog">Get Started</a>
+                  Get Started
                 </Button>
+                <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
+                  Learn more
+                </Button>
+                <Box>
+                  <Icon
+                    as={Arrow}
+                    color={useColorModeValue("gray.800", "gray.300")}
+                    w={71}
+                    position={"absolute"}
+                    right={-71}
+                    top={"10px"}
+                  />
+                  <Text
+                    fontSize={"lg"}
+                    fontFamily={"Caveat"}
+                    position={"absolute"}
+                    right={"-125px"}
+                    top={"-15px"}
+                    transform={"rotate(10deg)"}
+                  >
+                    Starting at $15/mo
+                  </Text>
+                </Box>
               </Stack>
             </Stack>
           </Container>
