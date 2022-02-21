@@ -14,7 +14,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
 import Head from "next/head";
 
@@ -184,14 +184,11 @@ const Home: NextPage = () => {
           >
             <Text>© 2022 Tiny Projects. All rights reserved</Text>
             <Stack direction={"row"} spacing={6}>
-              <SocialButton label={"Twitter"} href={"#"}>
+              <SocialButton label={"Twitter"} href={"https://twitter.com/sudoakk"}>
                 <FaTwitter />
               </SocialButton>
-              <SocialButton label={"YouTube"} href={"#"}>
-                <FaYoutube />
-              </SocialButton>
-              <SocialButton label={"Instagram"} href={"#"}>
-                <FaInstagram />
+              <SocialButton label={"linkedin"} href={"https://www.linkedin.com/in/mdakram/"}>
+                <FaLinkedin />
               </SocialButton>
             </Stack>
           </Container>
