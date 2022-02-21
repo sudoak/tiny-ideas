@@ -83,7 +83,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <link
+        <Link
           href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
           rel="stylesheet"
         />
@@ -137,17 +137,20 @@ const Home: NextPage = () => {
                 have such affair. We all have great idea's, but what next.
                 <br />
                 The Goal of this website is to challenge me personally and bring
-                those ideas to life.
-                I will be also writing about my journey on my{" "}
-                <a
+                those ideas to life. I will be also writing about my journey on
+                my{" "}
+                <Link
                   className="text-green-500 hover:text-green-600 hover:underline hover:uppercase"
                   href="/blog"
                 >
                   tiny blog.
-                </a>
-                <br/>
+                </Link>
                 <br />
-                <div className="subpixel-antialiased">Connect with me via mail: sudoakk@gmail.com</div>
+                <br />
+                <div className="subpixel-antialiased">
+                  Connect with me via mail:{" "}
+                  <Link href="mailto:sudoakk@gmail.com">sudoakk@gmail.com</Link>
+                </div>
               </Text>
               <Stack
                 direction={"column"}
@@ -165,7 +168,7 @@ const Home: NextPage = () => {
                     bg: "green.500",
                   }}
                 >
-                  <a href="/blog">Get Started</a>
+                  <Link href="/blog">Get Started</Link>
                 </Button>
               </Stack>
             </Stack>
